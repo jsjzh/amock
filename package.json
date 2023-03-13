@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.29.1",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-alloy": "^4.9.0",
+    "typescript": "^4.9.5"
+  }
+}
