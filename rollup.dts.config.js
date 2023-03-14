@@ -1,10 +1,9 @@
-// @ts-check
 import { existsSync, readdirSync } from "node:fs";
 import dts from "rollup-plugin-dts";
 
 if (!existsSync("temp/packages")) {
   console.warn(
-    "no temp dts files found. run `tsc -p tsconfig.build.json` first.",
+    "no temp dts files found. run `tsc -p tsconfig.dts.json` first.",
   );
   process.exit(1);
 }

@@ -4,8 +4,8 @@
   "packageManager": "pnpm@7.29.1",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.js",
-    "build": "node scripts/build.js",
+    "dev": "tsx scripts/dev.ts",
+    "build": "tsx scripts/build.ts",
     "build:dts": "tsc -p tsconfig.dts.json && rollup -c rollup.dts.config.js",
     "check": "tsc --incremental --noEmit",
     "lint": "eslint --cache --ext .ts packages/*/{src,__tests__}/**.ts",
@@ -17,6 +17,7 @@
     "@types/node": "^18.15.3",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "esbuild": "^0.17.11",
     "eslint": "^8.35.0",
     "eslint-config-alloy": "^4.9.0",
     "rollup": "^3.19.1",
