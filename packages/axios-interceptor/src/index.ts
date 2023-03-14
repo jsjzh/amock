@@ -1,12 +1,9 @@
 import axios, { AxiosResponse, InternalAxiosRequestConfig } from "axios";
+// import "./shims.axios.d.ts";
 
-const mockRequestInterceptors = (
+export const mockRequestInterceptors = (
   config: InternalAxiosRequestConfig,
 ): InternalAxiosRequestConfig => {
-  console.log(process.env.NODE_ENV);
-
-  console.log(config);
-
   const myURL = new URL(config.url || "/");
 
   // console.log(myURL);
@@ -23,7 +20,7 @@ const mockRequestInterceptors = (
   };
 };
 
-const mockResponseInterceptors = (data: AxiosResponse) => {
+export const mockResponseInterceptors = (data: AxiosResponse) => {
   console.log(data);
 
   if (!data.config.mockConfig?.enabled) return data;

@@ -1,11 +1,12 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 .DS_Store
-
 node_modules
 dist
+temp
 .idea
 .vscode
-
+.eslintcache
 yarn-error.log
 npm-debug.log*
+*.log
