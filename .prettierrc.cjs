@@ -6,7 +6,6 @@ module.exports = {
   // 大括号内的首尾需要空格
   bracketSpacing: true,
   cursorOffset: -1,
-  editorconfig: false,
   embeddedLanguageFormatting: "auto",
   // 换行符使用 lf
   endOfLine: "lf",
@@ -22,7 +21,7 @@ module.exports = {
   proseWrap: "preserve",
   // 对象的 key 仅在必要时用引号
   quoteProps: "as-needed",
-  rangeEnd: null,
+  rangeEnd: Infinity,
   // 每个文件格式化的范围是文件的全部内容
   rangeStart: 0,
   // 不需要写文件开头的 @prettier
