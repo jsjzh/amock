@@ -103,7 +103,8 @@ function createConfig(format, output, plugins = []) {
   const isServerRenderer = name === "server-renderer";
   const isNodeBuild = format === "cjs";
   const isGlobalBuild = /global/.test(format);
-  const isCompatPackage = pkg.name === "@vue/compat";
+  const isCompatPackage =
+    pkg.name === "@vue/compat" || pkg.name === "@vue/compat-canary";
   const isCompatBuild = !!packageOptions.compat;
   const isBrowserBuild =
     (isGlobalBuild || isBrowserESMBuild || isBundlerESMBuild) &&
@@ -241,7 +242,10 @@ function createConfig(format, output, plugins = []) {
     // we are bundling forked consolidate.js in compiler-sfc which dynamically
     // requires a ton of template engines which should be ignored.
     let cjsIgnores = [];
-    if (pkg.name === "@vue/compiler-sfc") {
+    if (
+      pkg.name === "@vue/compiler-sfc" ||
+      pkg.name === "@vue/compiler-sfc-canary"
+    ) {
       cjsIgnores = [
         ...Object.keys(consolidatePkg.devDependencies),
         "vm",
