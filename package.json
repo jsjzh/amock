@@ -14,9 +14,9 @@
     "preinstall": "tsx ./scripts/preinstall.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.16.14",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.59.7",
+    "@types/node": "^18.16.16",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
     "esbuild": "^0.17.19",
     "eslint": "^8.41.0",
     "eslint-config-alloy": "^4.9.0",
