@@ -14,11 +14,11 @@
     "preinstall": "tsx ./scripts/preinstall.ts"
   },
   "devDependencies": {
-    "@types/node": "^18.17.9",
+    "@types/node": "^18.17.12",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "esbuild": "^0.17.19",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "eslint-config-alloy": "^4.9.0",
     "rollup": "^3.28.1",
     "rollup-plugin-dts": "^5.3.1",
